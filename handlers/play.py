@@ -94,9 +94,9 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 
-@Client.on_message(command("play") & other_filters)
+@Client.on_message(command("oynat") & other_filters)
 @errors
-async def play(_, message: Message):
+async def oynat(_, message: Message):
 
     lel = await message.reply("🔄 **Işleme alındı ** Parça...")
     sender_id = message.from_user.id
@@ -186,7 +186,7 @@ async def play(_, message: Message):
         await generate_cover(requested_by, title, views, duration, thumbnail)     
         file_path = await converter.convert(youtube.download(url))
     else:
-        await lel.edit("🔎 **Aranıyor** the song...")
+        await lel.edit("🔎 **Aranıyor**  Parça...")
         sender_id = message.from_user.id
         user_id = message.from_user.id
         sender_name = message.from_user.first_name
@@ -237,7 +237,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ Your requested song **queued** at position {position}!",
+        caption=f"#⃣ Your requested song **Sıraya** at position {position}!",
         reply_markup=keyboard)
         os.remove("final.png")
         return await lel.delete()
