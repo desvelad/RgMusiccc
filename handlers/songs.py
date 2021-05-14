@@ -11,8 +11,8 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.command('song') & ~filters.private & ~filters.channel)
-def song(client, message):
+@Client.on_message(filters.command('bul') & ~filters.private & ~filters.channel)
+def bul(client, message):
 
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
@@ -45,7 +45,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("Downloading the song by @Infinity_BOTs...")
+    m.edit("şarkıyı @EfsaneStar katkılarıyla indiriyorum...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
