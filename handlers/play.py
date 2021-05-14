@@ -237,7 +237,7 @@ async def oynat(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ Your requested song **Sıraya** at position {position}!",
+        caption=f"#⃣ İstediğiniz şarkı **Sıraya** Eklendi {position}!",
         reply_markup=keyboard)
         os.remove("final.png")
         return await lel.delete()
