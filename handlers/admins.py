@@ -9,10 +9,10 @@ from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
 
 
-@Client.on_message(command("pause") & other_filters)
+@Client.on_message(command("durdur") & other_filters)
 @errors
 @authorized_users_only
-async def pause(_, message: Message):
+async def durdur(_, message: Message):
     if (
             message.chat.id not in callsmusic.pytgcalls.active_calls
     ) or (
@@ -21,13 +21,13 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Hiçbir şey oynamıyor.!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("▶️ Paused!")
+        await message.reply_text("▶️ Durduruldu!")
 
 
-@Client.on_message(command("resume") & other_filters)
+@Client.on_message(command("devam") & other_filters)
 @errors
 @authorized_users_only
-async def resume(_, message: Message):
+async def devam(_, message: Message):
     if (
             message.chat.id not in callsmusic.pytgcalls.active_calls
     ) or (
@@ -36,10 +36,10 @@ async def resume(_, message: Message):
         await message.reply_text("❗ Hiçbir şey duraklatılmadı!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("⏸ Resumed!")
+        await message.reply_text("⏸ Devam Ettirildi!")
 
 
-@Client.on_message(command("end") & other_filters)
+@Client.on_message(command("kapat") & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
@@ -55,10 +55,10 @@ async def stop(_, message: Message):
         await message.reply_text("❌ Akışı durdurdu!")
 
 
-@Client.on_message(command("skip") & other_filters)
+@Client.on_message(command("atla") & other_filters)
 @errors
 @authorized_users_only
-async def skip(_, message: Message):
+async def atla(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
         await message.reply_text("❗ Atlamak için hiçbir şey oynamıyor!")
     else:
@@ -72,4 +72,4 @@ async def skip(_, message: Message):
                 callsmusic.queues.get(message.chat.id)["file"]
             )
 
-        await message.reply_text("➡️ Geçerli şarkı atlandı!")
+        await message.reply_text("➡️ Geçerli şarkı atlatıldı!")
