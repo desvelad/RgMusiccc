@@ -246,7 +246,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Oynatılıyor** burada istenen şarkı {} EfsaneStar Bey Aracılığıyla 😜".format(
+        caption="▶️ **Oynatılıyor** burada istenen şarkı {} EfsaneStar Muzik Aracılığıyla 😜".format(
         message.from_user.mention()
         ),
     )
