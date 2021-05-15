@@ -19,6 +19,8 @@ Grubunuzun sesli aramasında müzik çalabilirim. [EfsaneStar](https://t.me/Efsa
 ⏭️ /atla - __Sesli Sohbette Çalan Geçerli Müziği Atlar.__
 🛑 /bitir - __Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.__
 🔎 /bul - __Müziği bulup gruba gönderir. Örnek /bul tuğkan kusura bakma.__
+↘️ /katil - __Müzik Botunun Asistanını Gruba Çağırır.__
+↘️ /ayril - __Müzik Botunun Asistanını Gruptan Çıkartır.__
 
 Beni grubunuza ekleyin ve özgürce müzik çalın !**
         """,
