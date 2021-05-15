@@ -9,7 +9,7 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
     await message.reply_text(
-        f"""**selam , Ben {bn} 🎵
+        f"""**Selam , Ben {bn} 🎵
 
 Grubunuzun sesli aramasında müzik çalabilirim. [EfsaneStar](https://t.me/EfsaneStar) tarafından geliştirilmiştir.
 Şu anda desteklediğim komutlar şunlardır:
@@ -19,6 +19,7 @@ Grubunuzun sesli aramasında müzik çalabilirim. [EfsaneStar](https://t.me/Efsa
 ⏭️ /atla - __Sesli Sohbette Çalan Geçerli Müziği Atlar.__
 🛑 /bitir - __Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.__
 🔎 /bul - __Müziği bulup gruba gönderir. Örnek /Bul uzi kervan.__
+🔀 /arama - __Müziği direk youtubeden arar ve linkler halinde sıralama yapar.__
 ↘️ /katil - __Müzik Botunun Asistanını Gruba Çağırır.__
 ↘️ /ayril - __Müzik Botunun Asistanını Gruptan Çıkartır.__
 
