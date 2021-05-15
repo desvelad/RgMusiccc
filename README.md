@@ -3,7 +3,7 @@
 ### Here the advanced branch with more features 🙂
 
 <p align="center">
-  <img src="https://telegra.ph/file/e1d2e60a756b2cda8a058.jpg">
+  <img src="https://i.ibb.co/khRz42f/Turkish-Voice.jpghttps://i.ibb.co/khRz42f/Turkish-Voice.jpg">
 </p>
 
 <h3>Requirements 📝</h3>
@@ -15,16 +15,16 @@
 
 ### Commands 🛠
 #### For all in group
-- `/play` - reply to youtube url or song file to play song
-- `/ytp <song name>` - play song without youtube url or song file (best method)
-- `/song <song name>` - download songs you want quickly
-- `/search <query>` - search videos on youtube with details
+- `/oynat` - reply to youtube url or song file to play song
+- `/ <song name>` - play song without youtube url or song file (best method)
+- `/bul <song name>` - download songs you want quickly
+- `/arama <query>` - search videos on youtube with details
 
 #### Admins only
-- `/pause` - pause song play
-- `/resume` - resume song play
-- `/skip` - play next song
-- `/end` - stop music play
+- `/durdur` - pause song play
+- `/devam` - resume song play
+- `/atla` - play next song
+- `/kapat` - stop music play
 
 ### Deploy To Heroku</h4>
 
