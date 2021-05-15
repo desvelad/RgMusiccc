@@ -16,7 +16,6 @@
 ### Commands 🛠
 #### For all in group
 - `/oynat` - reply to youtube url or song file to play song
-- `/ <song name>` - play song without youtube url or song file (best method)
 - `/bul <song name>` - download songs you want quickly
 - `/arama <query>` - search videos on youtube with details
 
