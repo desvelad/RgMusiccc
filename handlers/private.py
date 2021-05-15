@@ -12,6 +12,13 @@ async def start(_, message: Message):
         f"""**selam , Ben {bn} 🎵
 
 Grubunuzun sesli aramasında müzik çalabilirim. [EfsaneStar](https://t.me/EfsaneStar) tarafından geliştirilmiştir.
+Şu anda desteklediğim komutlar şunlardır:
+▶️ /oynat - __Yanıtlanan ses dosyasını veya YouTube videosunu bağlantı üzerinden çalar.__
+⏸️ /durdur - __Sesli Sohbet Müziğini Duraklat.__
+⏩ /devam - __Sesli Sohbet Müziğine Devam Et.__
+⏭️ /atla - __Sesli Sohbette Çalan Geçerli Müziği Atlar.__
+🛑 /bitir - __Sırayı temizler ve Sesli Sohbet Müziği'ni sona erdirir.__
+🔎 /bul - __Müziği bulup gruba gönderir. Örnek /bul tuğkan kusura bakma.__
 
 Beni grubunuza ekleyin ve özgürce müzik çalın !**
         """,
