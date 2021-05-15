@@ -25,11 +25,11 @@
 - `/atla` - play next song
 - `/kapat` - stop music play
 
-### Heroku'ya Dağıt </h4>
+### Heroku'ya Dağıt ⬇️</h4>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/GroupMusicBot)
 
-Get pyrogram STRING_NAME from here ⬇️
+Buradan pyrogram STRING_NAME alın ⬇️
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@SpEcHiDe/GenerateStringSession)
 
